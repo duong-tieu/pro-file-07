@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p onmouseover="mouseover()" onmouseout="onmouseout()" id="demon">this is the text</p>
+<script>
+    var demon = document.getElementById("demon");
+    demon.addEventListener("mouseover",mouseout);
+    demon.addEventListener("mouseout",mouseout);
+    function mouseover() {
+    document.getElementById("demon").style.color="blue";
+    }
+    function mouseout() {
+    document.getElementById("demon").style.color="red";
+    }
+</script>
+
+</body>
+</html>
